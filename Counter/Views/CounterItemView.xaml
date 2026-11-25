@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Counter.Views.CounterItemView">
+
+    <HorizontalStackLayout Padding="10" Spacing="15" VerticalOptions="Center">
+
+        <Label Text="{Binding Name}"
+               FontSize="18"
+               VerticalOptions="Center"
+               WidthRequest="130" />
+
+        <Button Text="-"
+                Clicked="OnDecrementClicked"
+                WidthRequest="45" />
+
+        <Label Text="{Binding Value}"
+               FontSize="20"
+               FontAttributes="Bold"
+               VerticalOptions="Center"
+               HorizontalTextAlignment="Center"
+               WidthRequest="45" />
+
+        <Button Text="+"
+                Clicked="OnIncrementClicked"
+                WidthRequest="45" />
+
+    </HorizontalStackLayout>
+</ContentView>
